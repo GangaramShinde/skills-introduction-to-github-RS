@@ -48,3 +48,4 @@ obj/
 *.swp
 appsettings.Development.json
 wwwroot/lib/
+node_modules/
