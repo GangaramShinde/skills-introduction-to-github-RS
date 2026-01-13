@@ -35,3 +35,16 @@
 .Trashes
 ehthumbs.db
 Thumbs.db
+
+# .NET Core #
+#############
+bin/
+obj/
+*.user
+*.suo
+*.cache
+.vs/
+*.vscode/
+*.swp
+appsettings.Development.json
+wwwroot/lib/

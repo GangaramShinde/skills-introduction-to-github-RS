@@ -58,6 +58,35 @@ In this course, you will:
    - Scroll down and click the **Create repository** button at the bottom of the form.
 3. After your new repository is created, wait about 20 seconds, then refresh the page. Follow the step-by-step instructions in the new repository's README.
 
+---
+
+## TelerikSampleApp - .NET Core Project
+
+This repository also contains a sample ASP.NET Core MVC application demonstrating Telerik UI integration.
+
+### Quick Start
+
+```bash
+cd TelerikSampleApp
+dotnet build
+dotnet run
+```
+
+Visit `http://localhost:5000` in your browser to see the application.
+
+### Features
+
+- ASP.NET Core 10.0 MVC application
+- Pre-configured structure for Telerik UI for ASP.NET Core
+- Sample pages demonstrating Telerik UI component integration
+- Comprehensive documentation for setting up Telerik UI
+
+For detailed setup instructions, see [TelerikSampleApp/README.md](TelerikSampleApp/README.md).
+
+**Note:** You'll need a Telerik UI for ASP.NET Core license (trial or commercial) to use the Telerik components. See the project README for setup instructions.
+
+---
+
 <footer>
 
 <!--
