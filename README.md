@@ -59,6 +59,35 @@ Branches allow you to separate your work from the `main` branch. In other words,
 
 6. Wait about 20 seconds then refresh this page (the one you're following instructions from). [GitHub Actions](https://docs.github.com/en/actions) will automatically update to the next step.
 
+---
+
+## TelerikSampleApp - .NET Core Project
+
+This repository also contains a sample ASP.NET Core MVC application demonstrating Telerik UI integration.
+
+### Quick Start
+
+```bash
+cd TelerikSampleApp
+dotnet build
+dotnet run
+```
+
+Visit `http://localhost:5000` in your browser to see the application.
+
+### Features
+
+- ASP.NET Core 10.0 MVC application
+- Pre-configured structure for Telerik UI for ASP.NET Core
+- Sample pages demonstrating Telerik UI component integration
+- Comprehensive documentation for setting up Telerik UI
+
+For detailed setup instructions, see [TelerikSampleApp/README.md](TelerikSampleApp/README.md).
+
+**Note:** You'll need a Telerik UI for ASP.NET Core license (trial or commercial) to use the Telerik components. See the project README for setup instructions.
+
+---
+
 <footer>
 
 <!--

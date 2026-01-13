@@ -1,0 +1,120 @@
+@{
+    ViewData["Title"] = "Telerik UI Demo";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Telerik UI for ASP.NET Core Demo</h1>
+    <p class="lead">This page demonstrates various Telerik UI components.</p>
+</div>
+
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="alert alert-info" role="alert">
+                <h4 class="alert-heading">Setup Required!</h4>
+                <p>To see Telerik UI components in action, you need to:</p>
+                <ol>
+                    <li>Obtain a <a href="https://www.telerik.com/aspnet-core-ui" target="_blank">Telerik UI for ASP.NET Core license</a> (trial or commercial)</li>
+                    <li>Add the Telerik NuGet source to your project</li>
+                    <li>Install the <code>Telerik.UI.for.AspNet.Core</code> NuGet package</li>
+                    <li>Uncomment the Telerik configuration in <code>Program.cs</code> and <code>_ViewImports.cshtml</code></li>
+                    <li>Uncomment the component examples below</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-4">
+        <div class="col-md-12">
+            <h3>Sample Telerik Components</h3>
+            <p>Below are examples of Telerik UI components (currently commented out):</p>
+        </div>
+    </div>
+
+    @* Uncomment after setting up Telerik UI *@
+
+    @* Example 1: DatePicker *@
+    @* <div class="row mt-3">
+        <div class="col-md-6">
+            <h4>DatePicker</h4>
+            <kendo-datepicker name="datepicker" value="DateTime.Now">
+            </kendo-datepicker>
+        </div>
+    </div> *@
+
+    @* Example 2: Grid *@
+    @* <div class="row mt-3">
+        <div class="col-md-12">
+            <h4>Grid</h4>
+            <kendo-grid name="grid">
+                <datasource type="DataSourceTagHelperType.Ajax">
+                    <transport>
+                        <read url="@Url.Action("Products_Read", "Grid")" />
+                    </transport>
+                </datasource>
+                <columns>
+                    <column field="ProductID" title="Product ID" width="120" />
+                    <column field="ProductName" title="Product Name" />
+                    <column field="UnitPrice" title="Unit Price" format="{0:c}" width="120" />
+                    <column field="UnitsInStock" title="Units In Stock" width="120" />
+                </columns>
+                <pageable enabled="true" />
+                <sortable enabled="true" />
+                <filterable enabled="true" />
+            </kendo-grid>
+        </div>
+    </div> *@
+
+    @* Example 3: Button *@
+    @* <div class="row mt-3">
+        <div class="col-md-6">
+            <h4>Button</h4>
+            <kendo-button name="button" type="button" theme-color="ThemeColor.Primary">
+                Click Me!
+            </kendo-button>
+        </div>
+    </div> *@
+
+    @* Example 4: DropDownList *@
+    @* <div class="row mt-3">
+        <div class="col-md-6">
+            <h4>DropDownList</h4>
+            <kendo-dropdownlist name="dropdownlist"
+                               option-label="Select a product...">
+                <datasource>
+                    <transport>
+                        <read url="@Url.Action("Products_Read", "DropDownList")" />
+                    </transport>
+                </datasource>
+            </kendo-dropdownlist>
+        </div>
+    </div> *@
+
+    @* Example 5: Chart *@
+    @* <div class="row mt-3">
+        <div class="col-md-12">
+            <h4>Chart</h4>
+            <kendo-chart name="chart">
+                <series>
+                    <series-item type="ChartSeriesType.Line" data="new double[] { 3.907, 7.943, 7.848, 9.284, 9.263, 9.801 }">
+                    </series-item>
+                </series>
+                <category-axis>
+                    <category-axis-item categories="new string[] { '2010', '2011', '2012', '2013', '2014', '2015' }">
+                    </category-axis-item>
+                </category-axis>
+            </kendo-chart>
+        </div>
+    </div> *@
+
+    <div class="row mt-5">
+        <div class="col-md-12">
+            <h3>Resources</h3>
+            <ul>
+                <li><a href="https://docs.telerik.com/aspnet-core/introduction" target="_blank">Telerik UI for ASP.NET Core Documentation</a></li>
+                <li><a href="https://demos.telerik.com/aspnet-core/" target="_blank">Live Demos</a></li>
+                <li><a href="https://www.telerik.com/aspnet-core-ui" target="_blank">Get Started with Telerik UI</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
